@@ -24,10 +24,9 @@ Todos los aspectos de la tarea que el agente no conoce,
 - El proceso avanza en intervalos infinitos 
 <br /><br />
 El agente, interactua con el entorno, observa el estado y ejecuta una accion, esa accion modifica el estado y recibe una recompensa del entorno, que le da una devolucion para saber si la accion fue buena o no<br />
-<center>
+<p align="center" width="100%">
 <img src="images/1.png" width="50%" a="center"/>
-</center>
-<br />
+</p>
 <img src="images/2.png" /><br />
 <img src="images/3.png" /><br />
 
