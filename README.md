@@ -24,7 +24,7 @@ Todos los aspectos de la tarea que el agente no conoce,
 - El proceso avanza en intervalos infinitos 
 <br /><br />
 El agente, interactua con el entorno, observa el estado y ejecuta una accion, esa accion modifica el estado y recibe una recompensa del entorno, que le da una devolucion para saber si la accion fue buena o no<br />
-<img src="images/1.png" /><br />
+<img src="images/1.png" with="50%"/><br />
 <img src="images/2.png" /><br />
 <img src="images/3.png" /><br />
 
@@ -75,5 +75,5 @@ Una funcion que decide que accion tomar<br />
 Tenemos que hallar la politica optima, la vamos a llamar como pi*
 <br />
 <img src="images/10.png" /><br />
-q-valor, es el retorno qu esperamos ontener si partiendo de ese estado tomamos la accion especificada<br />
+q-valor, es el retorno que esperamos obtener si partiendo de ese estado tomamos la accion especificada<br />
 <img src="images/11.png" /><br />
