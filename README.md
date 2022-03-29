@@ -79,3 +79,46 @@ Tenemos que hallar la politica optima, la vamos a llamar como pi*
 <img src="images/10.png" /><br />
 q-valor, es el retorno que esperamos obtener si partiendo de ese estado tomamos la accion especificada<br />
 <img src="images/11.png" /><br />
+
+## Ecuacion Bellman
+Generamos una relacion recursiva entre su estado y los estados sucesores
+<p align="center" width="100%"><img src="images/12.png" width="100%" a="center"/> </p>
+
+# Librerias
+
+## gym
+nos proporciona una interface a las tareas de control que queremos resolver, tambien podemos realizar customizaciones como lo hicimos en el archivo *2022-03-Reinforcement-learning/beginner_master_rl/envs.py* (hicimos un laberinto)
+
+# Programacion dinamica
+Consiste en resolver los problemas mas pequeños para encontrar la politica mas oprima.<br />
+La **solucion** optima a todos los **subproblemas** produce la solucion optima del problema **original**<br />
+<p align="center" width="100%"><img src="images/13.png" width="100%" a="center"/> </p>
+POdemos encontrar la politica optima para cada estado, cuando tengamos todas podemos combinarlas para optener la politica optima<br/>
+<p align="center" width="100%"><img src="images/14.png" width="100%" a="center"/> </p>
+Dependen mutuamente<br />
+<p align="center" width="100%"><img src="images/15.png" width="100%" a="center"/> </p>
+Vamos a tener una tabla con una entrada para cada una de las entradas de valores que va a ir mejorando.<br />
+Estado a la derecha por ejemplo<br />
+<p align="center" width="100%"><img src="images/16.png" width="100%" a="center"/> </p>
+Funciona solo cuando tenemos un modelo perfecto a la tarea que nos enfrentamos, todo lo que esperamos.<br />
+Con un auto es diferente (por ejemplo), pueden pasar muchas cosas que no nos esperamos<br />
+Resuelve problemas mediante valores esperados, no a base de ensayo y error<br />
+<p align="center" width="100%"><img src="images/17.png" width="100%" a="center"/> </p>
+Por cada paso recibe una recompensa de -1, tiene que encontrar la salida mas corta
+<p align="center" width="100%"><img src="images/18.png" width="100%" a="center"/> </p>
+siguiente interacion, siguen acercandose a sus valores optimos<br />
+
+- r + g*V(s')
+- -1 + (0.99 * 0)
+- -1 + (0.99 * -1)
+- -1 + (0.99 * -1.99)
+
+<p align="center" width="100%"><img src="images/19.png" width="100%" a="center"/> </p>
+<p align="center" width="100%"><img src="images/20.png" width="100%" a="center"/> </p>
+<p align="center" width="100%"><img src="images/21.png" width="100%" a="center"/> </p>
+<p align="center" width="100%"><img src="images/22.png" width="100%" a="center"/> </p>
+
+
+
+
+
