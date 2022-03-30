@@ -119,6 +119,8 @@ siguiente interacion, siguen acercandose a sus valores optimos<br />
 <p align="center" width="100%"><img src="images/22.png" width="100%" a="center"/> </p>
 
 
-
+## Iteracion de politica
+Tanto la funcion valor, como la politica, se iran acercando al valor optimo
+<p align="center" width="100%"><img src="images/23.png" width="100%" a="center"/> </p>
 
 
