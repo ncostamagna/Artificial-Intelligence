@@ -124,3 +124,11 @@ Tanto la funcion valor, como la politica, se iran acercando al valor optimo
 <p align="center" width="100%"><img src="images/23.png" width="100%" a="center"/> </p>
 
 
+## Iteraciion de Politica Generalizada
+<p align="center" width="100%"><img src="images/24.png" width="100%" a="center"/> </p>
+Los agentes deberan resolver la tarea a base de ensayo y error<br />
+Las actualizaciones de valores las van a tener a cabo en base a la experiencia de interactuar con el entorno<br />
+Esta es la funcionalidad que va <br />
+<p align="center" width="100%"><img src="images/25.png" width="100%" a="center"/> </p>
+
+
