@@ -131,4 +131,40 @@ Las actualizaciones de valores las van a tener a cabo en base a la experiencia d
 Esta es la funcionalidad que va <br />
 <p align="center" width="100%"><img src="images/25.png" width="100%" a="center"/> </p>
 
+# Monte Carlo
+Va devolviendo una recompensa por cada accion tomada
+<p align="center" width="100%"><img src="images/26.png" width="100%" a="center"/> </p>
+Ventajas:
+ - Estimacion de un estado no depende del resto de los estados
+ - Solo necesitamos los retornos generados por el agente
+ - Podemos centrar las estimaciones en los estados que nos ayudan a resolver la tarea, no a todos
+
+## Politica e-greedy
+Todas las acciones van a tener una probabilidad de ser escojidas mayor a **0**, de esta forma todas van a tener la 
+posibilidad de que su q-valor sea actualizado
+<p align="center" width="100%"><img src="images/27.png" width="100%" a="center"/> </p>
+- |A| -> 4 acciones disponibles
+- cuando escojemos una al azar, cada accion es equiprobable
+- la primera es la optima (0.85)
+- el segudno son las otras (0.05)
+<p align="center" width="100%"><img src="images/28.png" width="100%" a="center"/> </p>
+Vamos a utilizar epsilon para utilizar una probabilidad de escojer la opcion maximo o alguna de las otras al azar<br />
+
+## Off policy
+- POlitica exploratoria b(a|s)
+- Politica objetivo pi(a|s)
+
+### Exploratoria
+<p align="center" width="100%"><img src="images/29.png" width="100%" a="center"/> </p>
+
+### Objetivo
+<p align="center" width="100%"><img src="images/30.png" width="100%" a="center"/> </p>
+
+### Politicas
+<p align="center" width="100%"><img src="images/31.png" width="100%" a="center"/> </p>
+<p align="center" width="100%"><img src="images/32.png" width="100%" a="center"/> </p>
+Con eso la media aproximara el valor a la politica objetivo<br />
+Con la policy on usamos mucha memoria al pedo, de esta forma lo hacemos mas eficiente mediante la media<br />
+Usamos una media ponderada<br />
+<p align="center" width="100%"><img src="images/33.png" width="100%" a="center"/> </p>
 
